@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Arima&display=swap');
+
+.navigation {
+ background: linear-gradient(#EDEDED, #FFFFFF);
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ padding: 10px;
+}
+
+.company-name {
+  font-family: 'Arima', cursive;
+  color: #000;
+  text-transform: capitalize;
+}
+
+.nav-links a{
+  color: #000;
+  text-transform: uppercase;
+  margin-right: 10px;
+  /* display: block; */
+}
+
+.nav-links a.active {
+  color: #f80;
+}
+
+.hamburger {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  width: 40px;
+  aspect-ratio: 1/1;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  overflow: hidden;
+  display: none;
+}
+
+.hamburger span {
+  position: absolute;
+  width: 30px;
+  height: 3px;
+  background-color: #000;
+  border-radius: 4px;
+  transition: .5s;
+}
+
+.hamburger span:nth-child(1) {
+  transform: translateY(-10px);
+}
+
+.hamburger span:nth-child(2) {
+  transform: translateY(10px);
+}
+
+/* cross class */
+.hamburger.cross span:nth-child(1) {
+  transform: rotate(45deg);
+}
+
+.hamburger.cross span:nth-child(2) {
+  transform: rotate(315deg);
+}
+
+.hamburger.cross span:nth-child(3) {
+  display: none;
+}
+
+
+@media(max-width: 480px){
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links.cross {
+    display: block;
+  }
+
+  .nav-links a {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .navigation {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

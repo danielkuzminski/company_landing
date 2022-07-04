@@ -5,13 +5,14 @@ import About from './pages/About'
 import Contact from './pages/Contact'
 import Offer from './pages/Offer'
 import NotFound from './pages/NotFound';
+import Navbar from './components/Navbar'
 
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <h1>main app</h1> 
+        <Navbar />
         <Switch>
           <Route exact path='/'>
             <Home />
