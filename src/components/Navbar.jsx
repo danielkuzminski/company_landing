@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import {NavLink, Link} from 'react-router-dom'
 
-export default function Navbar({cross, handleClick}) {
+export default function Navbar() {
 
-  // const [cross, setCross] = useState(false)
+  const [cross, setCross] = useState(false)
 
-  // const handleClick = () => {
-  //   setCross(!cross)
-  // }
+  const handleClick = () => {
+    setCross(!cross)
+  }
 
   return (
     <nav className='navigation'>

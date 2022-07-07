@@ -6,20 +6,15 @@ import Contact from './pages/Contact'
 import Offer from './pages/Offer'
 import NotFound from './pages/NotFound';
 import Navbar from './components/Navbar'
-import { useState } from 'react';
 
 
 function App() {
-  const [cross, setCross] = useState(false)
 
-  const handleClick = () => {
-    setCross(!cross)
-  }
 
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar cross={cross} handleClick={handleClick}/>
+        <Navbar />
         <Switch>
           <Route exact path='/'>
             <Home />
