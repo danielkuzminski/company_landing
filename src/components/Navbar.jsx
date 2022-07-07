@@ -2,13 +2,13 @@ import React, { useState } from 'react'
 import './Navbar.css'
 import {NavLink, Link} from 'react-router-dom'
 
-export default function Navbar() {
+export default function Navbar({cross, handleClick}) {
 
-  const [cross, setCross] = useState(false)
+  // const [cross, setCross] = useState(false)
 
-  const handleClick = () => {
-    setCross(!cross)
-  }
+  // const handleClick = () => {
+  //   setCross(!cross)
+  // }
 
   return (
     <nav className='navigation'>
@@ -19,10 +19,10 @@ export default function Navbar() {
       </div>
       {cross &&<section className='navigation-wrapper'>
         <div className={cross ? "nav-links cross" : "nav-links"}>
-          <NavLink exact to='/'>home</NavLink>
-          <NavLink to='/offer'>oferta</NavLink>
-          <NavLink to='/contact'>kontakt</NavLink>
-          <NavLink to='/about'>o firmie</NavLink>
+          <NavLink exact to='/' onClick={handleClick}>home</NavLink>
+          <NavLink to='/offer' onClick={handleClick}>oferta</NavLink>
+          <NavLink to='/contact' onClick={handleClick}>kontakt</NavLink>
+          <NavLink to='/about' onClick={handleClick}>o firmie</NavLink>
         </div>    
       </section>}
       <div className={cross ? "hamburger cross" : "hamburger"} onClick={handleClick}>
