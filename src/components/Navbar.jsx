@@ -17,12 +17,14 @@ export default function Navbar() {
           <h1 className='company-name'>nazwa firmy</h1>
         </Link>
       </div>
-      <div className={cross ? "nav-links cross" : "nav-links"}>
-        <NavLink exact to='/'>home</NavLink>
-        <NavLink to='/offer'>oferta</NavLink>
-        <NavLink to='/contact'>kontakt</NavLink>
-        <NavLink to='/about'>o firmie</NavLink>
-      </div>    
+      {cross &&<section className='navigation-wrapper'>
+        <div className={cross ? "nav-links cross" : "nav-links"}>
+          <NavLink exact to='/'>home</NavLink>
+          <NavLink to='/offer'>oferta</NavLink>
+          <NavLink to='/contact'>kontakt</NavLink>
+          <NavLink to='/about'>o firmie</NavLink>
+        </div>    
+      </section>}
       <div className={cross ? "hamburger cross" : "hamburger"} onClick={handleClick}>
         <span></span><span></span><span></span>
       </div>
