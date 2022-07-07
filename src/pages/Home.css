@@ -38,7 +38,7 @@
 }
 
 .home-show-more {
-  display: block;
+  display: inline-block;
   font-size: 1.2rem;
   text-transform: uppercase;
   border: 2px solid #fff;
@@ -47,6 +47,7 @@
   padding: 10px 20px;
   z-index: 2;
   text-shadow: none;
+  margin-right: 10px;
 }
 
 .overlay {
@@ -59,6 +60,7 @@
   mix-blend-mode: overlay;
 }
 
+
 @media(max-width: 480px){
   .home-container {
     padding: 25px;
@@ -66,5 +68,9 @@
 
   .home-company-about {
     max-width: 90%;
+  }
+
+  .home-show-more {
+    margin-bottom: 10px;
   }
 }
