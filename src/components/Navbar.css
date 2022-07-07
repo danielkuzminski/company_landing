@@ -58,6 +58,7 @@
   justify-content: center;
   cursor: pointer;
   overflow: hidden;
+  z-index: 3;
 }
 
 .hamburger span {
@@ -124,5 +125,6 @@
   .navigation-wrapper {
     width: 100vw;
     height: 100vh;
+    z-index: 3;
   }
 }
