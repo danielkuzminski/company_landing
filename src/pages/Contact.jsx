@@ -1,8 +1,10 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useHistory } from 'react-router-dom'
 import './Contact.css'
 
 export default function Contact() {
-  // logic to send data to database
+  
+  
 
   return (
     <div className='contact-container'>
@@ -12,26 +14,27 @@ export default function Contact() {
         <p><i class="fa-solid fa-arrow-down"></i></p>
       </div>
 
-      <form className='contact-form'>
+      <form className='contact-form' action="mailto:your@domain.abc" method="GET">
         <h1 className='contact-header'>Skontaktuj się z nami</h1>
         <label className='form-label'>
           <span>Temat: </span>
-          <input type="text" required/>
+          <input type="text" required name='topic'/>
         </label>
         <label className='form-label'>
           <span>Treść wiadomości: </span>
-          <textarea required></textarea>
+          <textarea required name='conetnt'></textarea>
         </label>
         <label className='form-label'>
           <span>Numer telefonu: </span>
-          <input type="number" required/>
+          <input type="number" required name='phNumber'/>
         </label>
         <label className='form-label'>
           <span>Adres e-mail: </span>
-          <input type="email" required/>
+          <input type="email" name='emailAddress'/>
         </label>
-        <button type='submit'>Prześlij</button>
+        <button className='submit-btn'  type='submit' value='Send'>Prześlij</button>
       </form>
+
     </div>
   )
 }
