@@ -24,14 +24,6 @@ export default function Contact() {
           <span>Treść wiadomości: </span>
           <textarea required name='conetnt'></textarea>
         </label>
-        <label className='form-label'>
-          <span>Numer telefonu: </span>
-          <input type="number" required name='phNumber'/>
-        </label>
-        <label className='form-label'>
-          <span>Adres e-mail: </span>
-          <input type="email" name='emailAddress'/>
-        </label>
         <button className='submit-btn'  type='submit' value='Send'>Prześlij</button>
       </form>
 
