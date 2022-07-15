@@ -12,7 +12,6 @@ export default function Home() {
           <Link className='home-show-more' to='/offer'>Zobacz więcej <i class="fa-solid fa-arrow-right"></i></Link>
           <Link to='/contact' className='home-show-more'><i class="fa-solid fa-phone"></i> Skontaktuj sie z nami</Link>
         </div>
-<div className="overlay"></div>
     </div>
   )
 }

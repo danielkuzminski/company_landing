@@ -1,46 +1,22 @@
 .about-wrapper {
+  padding: 100px;
+  line-height: 1.4;
   width: 100%;
   min-height: 100vh;
 }
 
-.section-wrapper {
-  font-size: 1.2rem;
-  text-align: left;
-  line-height: 1.6;
-  padding: 20px 40px;
+.section-about {
+  margin-bottom: 30px;
 }
 
-.section-wrapper p {
-  margin-top: 20px;
+.section-about h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #aaa;
+  color: #aaa;
 }
 
-.showcase {
-  padding: 0;
-  width: 100%;
-  height: 300px;
-  /* background-attachment: fixed; */
-
-  /* temporary background */
-  background-color: cadetblue;
-}
-
-.showcase-top {
-  background-image: url('../assets/main_section.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.showcase-middle {
-  background-image: url('../assets/accountant.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.showcase-bottom {
-  background-image: url('../assets/office-g7374f3a46_1280.jpg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+.section-about p {
+  text-align: justify;
+  margin-bottom: 10px;
 }

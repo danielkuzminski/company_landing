@@ -5,7 +5,7 @@ import './Offer.css'
 export default function Offer() {
   return (
     <div>
-            <div className="showcase-top showcase"></div>
+      <div className="showcase-top showcase"></div>
       <section className='section-top section-wrapper'>
         <h1>Lorem ipsum dolor sit amet.</h1>
         <p className='offer-icon'><i class="fa-solid fa-book-open"></i> Karta Podatkowa</p>

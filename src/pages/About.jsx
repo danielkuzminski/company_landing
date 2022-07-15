@@ -4,21 +4,21 @@ import './About.css'
 export default function About() {
   return (
     <div className='about-wrapper'>
-      <div className="showcase-top showcase"></div>
-      <section className='section-top section-wrapper'>
-        <h1>Lorem ipsum dolor sit amet.</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde dolorum, soluta ab reiciendis dolor accusantium ad. Eveniet deserunt ipsum autem repudiandae at temporibus asperiores, perferendis nobis quibusdam distinctio quia neque.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae quae aperiam voluptate beatae laborum sapiente.</p>
+      <section className='section-about'>
+        <h1>Kim jesteśmy?</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti enim qui fugiat perferendis commodi quaerat placeat minus possimus beatae veniam. Voluptas repellendus illum excepturi quod maxime repudiandae temporibus, doloremque ipsa.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corrupti officia harum sit, corporis possimus impedit reiciendis doloribus.</p>
       </section>
-      <div className="showcase-middle showcase"></div>
-      <section className='section-middle section-wrapper'>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis, est quisquam iste suscipit libero amet itaque iusto totam atque cum tenetur.</p>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero maiores aperiam atque ad perspiciatis qui debitis est ipsum cupiditate natus?</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo doloribus amet ratione adipisci laborum labore assumenda explicabo, ab quae a fugit, rerum qui illo iusto. A cumque maiores quidem architecto?</p>
+      <section className='section-about'>
+        <h1>Nasza historia</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti aliquam rem quod quaerat impedit natus praesentium nesciunt dicta eos porro asperiores modi perspiciatis repudiandae itaque, temporibus consectetur voluptates! Sint molestias consectetur vel voluptates consequuntur quibusdam nulla id ut minus nihil.</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum error blanditiis natus harum doloremque, ipsa voluptatem eligendi laboriosam aspernatur sint.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi iure perferendis molestias minus at, labore molestiae reiciendis quas corporis sequi laudantium est? Maxime incidunt minima delectus cum doloremque? Officia, nihil?</p>
       </section>
-      <div className="showcase-bottom showcase"></div>
-      <section className='section-bottom section-wrapper'>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam iste aliquid nesciunt ipsum dolorum. Quisquam tenetur ipsam eligendi quod ratione pariatur, doloremque accusamus molestias, debitis suscipit vitae molestiae saepe esse, nihil possimus rerum aut obcaecati veniam. Laborum quam explicabo sunt sint quos, unde eveniet nesciunt nostrum possimus. Eius, ut recusandae.</p>
+      <section className='section-about'>
+        <h1>Dlaczego jesteśmy najlepszym wyborem</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti aut maxime deserunt odio blanditiis error provident tenetur unde quidem eius.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod tempore repellendus pariatur quam voluptate eum ex, vel cumque blanditiis voluptatum ipsa ut nam ab illum.</p>
       </section>
     </div>
   )
