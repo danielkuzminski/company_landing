@@ -20,3 +20,9 @@
   text-align: justify;
   margin-bottom: 10px;
 }
+
+@media(max-width: 480px){
+  .about-wrapper {
+    padding: 60px 20px;
+  }
+}

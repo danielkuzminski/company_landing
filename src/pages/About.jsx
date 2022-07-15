@@ -9,6 +9,9 @@ export default function About() {
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti enim qui fugiat perferendis commodi quaerat placeat minus possimus beatae veniam. Voluptas repellendus illum excepturi quod maxime repudiandae temporibus, doloremque ipsa.</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non corrupti officia harum sit, corporis possimus impedit reiciendis doloribus.</p>
       </section>
+      <section>
+        <img src="" alt="" />
+      </section>
       <section className='section-about'>
         <h1>Nasza historia</h1>
         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti aliquam rem quod quaerat impedit natus praesentium nesciunt dicta eos porro asperiores modi perspiciatis repudiandae itaque, temporibus consectetur voluptates! Sint molestias consectetur vel voluptates consequuntur quibusdam nulla id ut minus nihil.</p>
