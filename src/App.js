@@ -6,7 +6,6 @@ import Contact from './pages/Contact'
 import Offer from './pages/Offer'
 import NotFound from './pages/NotFound';
 import Navbar from './components/Navbar'
-import ThankYou from './pages/ThankYou';
 
 
 function App() {
@@ -28,9 +27,6 @@ function App() {
           </Route>
           <Route path='/offer'>
             <Offer />
-          </Route>
-          <Route path='/thankyou'>
-            <ThankYou />
           </Route>
           <Route path='*'>
             <NotFound />

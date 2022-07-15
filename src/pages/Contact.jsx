@@ -1,32 +1,22 @@
 import React, { useState } from 'react'
-import { useHistory } from 'react-router-dom'
+import ContactForm from '../components/ContactForm'
 import './Contact.css'
 
 export default function Contact() {
+  const [show, setShow] = useState(false)
   
-  
+  const handleShow = () => {
+    setShow(!show)
+  }
 
   return (
     <div className='contact-container'>
       <div className="contact-data">
         <p>Skontaktuj sie z nami</p><p> pod numerem telefonu</p><a href='tel:+48 123 456 789'> <i class="fa-solid fa-phone"></i> +48 123 456 789</a>
         <p>Lub napisz</p>
-        <p><i class="fa-solid fa-arrow-down"></i></p>
+        <button onClick={handleShow} className='btn-envelope'><i class="fa-solid fa-envelope envelope"></i></button>
       </div>
-
-      <form className='contact-form' action="mailto:your@domain.abc" method="GET">
-        <h1 className='contact-header'>Skontaktuj się z nami</h1>
-        <label className='form-label'>
-          <span>Temat: </span>
-          <input type="text" required name='topic'/>
-        </label>
-        <label className='form-label'>
-          <span>Treść wiadomości: </span>
-          <textarea required name='conetnt'></textarea>
-        </label>
-        <button className='submit-btn'  type='submit' value='Send'>Prześlij</button>
-      </form>
-
+      {show && <ContactForm handleShow={handleShow} />}
     </div>
   )
 }
